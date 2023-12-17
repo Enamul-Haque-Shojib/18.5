@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<h1>Welcome to Profile</h1>
+<h1>Hello {{user}}</h1>
+
+<p><a class="btn btn-info " href="{% url 'changepass' %}">Change password</a>
+    <a class="btn btn-warning" href="{% url 'changepass2' %}">Change password without old password</a>
+</p>
+
+
+
+
+
+{% endblock %}
